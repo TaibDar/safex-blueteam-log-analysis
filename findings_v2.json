@@ -1,0 +1,114 @@
+[
+  {
+    "type": "Possible Compromised Credential (login after brute force)",
+    "severity": "Critical",
+    "source_ip": "45.153.160.2",
+    "line": 12,
+    "evidence": "Successful login for 'root' from 45.153.160.2 after 10 prior failures"
+  },
+  {
+    "type": "SQL Injection Attempt",
+    "severity": "High",
+    "source_ip": "198.51.100.22",
+    "line": 4,
+    "evidence": "/products?id=1' OR '1'='1"
+  },
+  {
+    "type": "SQL Injection Attempt",
+    "severity": "High",
+    "source_ip": "198.51.100.22",
+    "line": 5,
+    "evidence": "/products?id=1' UNION SELECT username,password FROM users--"
+  },
+  {
+    "type": "SQL Injection Attempt",
+    "severity": "High",
+    "source_ip": "198.51.100.22",
+    "line": 6,
+    "evidence": "/products?id=1;DROP TABLE users--"
+  },
+  {
+    "type": "Path Traversal / LFI Attempt",
+    "severity": "High",
+    "source_ip": "192.0.2.77",
+    "line": 7,
+    "evidence": "/../../../../etc/passwd"
+  },
+  {
+    "type": "Path Traversal / LFI Attempt",
+    "severity": "High",
+    "source_ip": "192.0.2.77",
+    "line": 8,
+    "evidence": "/../../../../windows/win.ini"
+  },
+  {
+    "type": "Path Traversal / LFI Attempt",
+    "severity": "High",
+    "source_ip": "192.0.2.77",
+    "line": 9,
+    "evidence": "/admin/config.php%00"
+  },
+  {
+    "type": "SSH Brute Force Attempt",
+    "severity": "High",
+    "source_ip": "45.153.160.2",
+    "line": null,
+    "evidence": "10 failed logins, usernames tried: admin, oracle, root, test, ubuntu"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 10,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 11,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 12,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 13,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 14,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 15,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "Known Attack Tool User-Agent",
+    "severity": "Medium",
+    "source_ip": "203.0.113.200",
+    "line": 16,
+    "evidence": "sqlmap/1.6.12"
+  },
+  {
+    "type": "High Request Volume (possible scan)",
+    "severity": "Low",
+    "source_ip": "203.0.113.200",
+    "line": null,
+    "evidence": "7 requests from this IP in log window"
+  }
+]
