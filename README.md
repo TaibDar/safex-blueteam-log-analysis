@@ -43,17 +43,3 @@ ENRICHMENT" in the console output and passively look it up:
 
 Record results in Section 4 of the report.
 
-## Integration with the rest of Group 33
-This module only covers **post-hoc log analysis / detection**. It does not
-overlap with reconnaissance, exploitation, or reporting-infrastructure
-modules other members may be building — coordinate in the group channel to
-confirm no one else is also building a log/SIEM-style detector.
-
-## Demo video checklist
-1. Show face + intro (module name, your name, project).
-2. Explain architecture: regex-based detection engine, two log sources, severity ranking.
-3. Run `analyze_logs.py` live against the sample logs.
-4. Walk through 2–3 findings and what evidence triggered them.
-5. Show one OSINT lookup (WHOIS or crt.sh) on a flagged IP.
-6. Show the filled-in `report_template.md`.
-7. Mention one real challenge (e.g., tuning regex to avoid false positives) and how you addressed it.
